@@ -1,0 +1,33 @@
+imap:
+  host: "mail.your-provider.com"
+  port: 993
+  use_ssl: true
+  username: "you@example.com"
+  # Password is stored in macOS Keychain - run: marc setup
+  mailbox: "INBOX"
+  batch_size: 50                        # Emails fetched per run
+  ssl_verify: true                      # Set false only for self-signed certs on LAN
+
+ollama:
+  host: "http://localhost:11434"
+  model: "qwen3:4b"                    # Recommended: qwen3:4b (thinking), qwen3:8b (best quality)
+  timeout_seconds: 180
+  max_prompt_chars: 6000               # Truncate long threads before sending to LLM
+
+obsidian:
+  vault_path: "/Users/you/Obsidian/MyVault"
+  email_folder: "Emails"
+  people_folder: "People"
+
+safety:
+  require_file_verify: true            # Obsidian file must exist on disk before any deletion
+  max_delete_per_run: 100              # Hard cap on server deletions per run
+  target_quota_percent: 88            # Stop deleting once below this %
+  move_to_trash: true                  # Copy to Trash folder before deleting (recovery window)
+
+state:
+  db_path: "./state.db"
+  audit_log: "./processed.jsonl"
+
+backup:
+  local_path: "~/EmailArchive"           # Raw .eml files saved here before deletion

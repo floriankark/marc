@@ -1,0 +1,28 @@
+# Personal configuration — contains your IMAP credentials and vault path
+config.yaml
+
+# Runtime state
+state.db
+processed.jsonl
+logs/
+.vault_migrated_v1
+
+# Local email backup archive
+EmailArchive/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# macOS
+.DS_Store
+
+# Editor / tool caches
+.claude/
+.idea/
+.vscode/
