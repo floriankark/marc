@@ -1,4 +1,4 @@
-# Marc — IMAP Email Archiver for Obsidian
+# Marc — eMAil ARChiver
 
 Marc fetches emails from any IMAP mailbox, archives them as Markdown notes in your [Obsidian](https://obsidian.md) vault, and keeps your inbox clean — all through a conversational interface powered by a local LLM via [Ollama](https://ollama.com).
 
