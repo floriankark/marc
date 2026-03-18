@@ -1,5 +1,7 @@
 # Marc — eMAil ARChiver
 
+<video src="assets/EmailGraph.mp4" autoplay loop muted playsinline></video>
+
 Marc fetches emails from any IMAP mailbox, archives them as Markdown notes in your [Obsidian](https://obsidian.md) vault, and keeps your inbox clean — all through a conversational interface powered by a local LLM via [Ollama](https://ollama.com).
 
 ```
