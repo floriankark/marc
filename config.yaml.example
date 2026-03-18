@@ -10,7 +10,8 @@ imap:
 
 ollama:
   host: "http://localhost:11434"
-  model: "qwen3:4b"                    # Recommended: qwen3:4b (thinking), qwen3:8b (best quality)
+  model: "qwen3.5:2b"                  # Min recommended: qwen3.5:2b — more RAM: qwen3.5:4b, nemotron-3-nano:4b, deepseek-r1:7b+
+                                       # Must support thinking + tools: https://ollama.com/search?c=tools&c=thinking
   timeout_seconds: 180
   max_prompt_chars: 6000               # Truncate long threads before sending to LLM
 

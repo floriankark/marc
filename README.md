@@ -40,12 +40,20 @@ While Marc thinks, you see its reasoning live in a scrolling grey viewport — t
 | Obsidian vault | any |
 | IMAP account | any provider (SSL recommended) |
 
-**Recommended models** — Qwen3 supports live thinking out of the box:
+**Recommended models** — must support both **thinking** and **tools**
+([browse the full list](https://ollama.com/search?c=tools&c=thinking)):
 
 ```bash
-ollama pull qwen3:4b    # good balance of speed and quality
-ollama pull qwen3:8b    # best quality, needs ~8 GB RAM
+ollama pull qwen3.5:2b          # minimum recommended — fast, low RAM
+ollama pull qwen3.5:4b          # better quality, needs ~4 GB RAM
+ollama pull nemotron-3-nano:4b  # alternative at 4 B
+ollama pull deepseek-r1:7b      # strong reasoning, needs ~8 GB RAM
 ```
+
+> Models smaller than 2 B are not recommended, but you are welcome to try and
+> share your results. What matters is that the model supports both thinking and
+> tool use — stick to the [tools + thinking](https://ollama.com/search?c=tools&c=thinking)
+> category on Ollama.
 
 ---
 
